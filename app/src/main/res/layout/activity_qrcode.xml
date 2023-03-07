@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".qrcode">
+    <LinearLayout
+        android:id="@+id/LinearLayout_v"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/longtitude"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/LinearLayout_h"
+            android:text=""
+            android:textSize="30dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.500"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.400"
+            android:visibility="invisible"/>
+
+        <LinearLayout
+            android:id="@+id/LinearLayout_h"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:id="@+id/text_view"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="16dp"
+                android:layout_marginLeft="16dp"
+                android:scrollbars="vertical"
+                android:singleLine="false"
+                android:text="loading"
+                android:textSize="36sp" />
+
+            <Button
+                android:id="@+id/ok_button"
+                android:layout_width="wrap_content"
+                android:layout_height="61dp"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="12dp"
+                android:layout_weight="0"
+                android:text="產生" />
+
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/P_Con"
+            android:layout_width="match_parent"
+            android:layout_height="66dp"
+            android:layout_below="@+id/text_view"
+            android:layout_marginTop="32dp"
+            android:gravity="center"
+            android:text="健康"
+            android:textSize="30dp"
+            app:layout_constraintBottom_toBottomOf="@id/textclock"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+        <TextView
+            android:id="@+id/latitude"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/longtitude"
+            android:text=""
+            android:textSize="30dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.500"
+            android:visibility="invisible"/>
+
+
+
+        <TextClock
+            android:id="@+id/textclock"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:format12Hour="yyyy-MM-dd hh:mm:ss"
+            android:textSize="60px"
+            android:layout_below="@+id/latitude"
+            app:layout_constraintBottom_toBottomOf="@id/latitude"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:visibility="invisible"
+            />
+
+        <ImageView
+            android:id="@+id/image_view"
+            android:layout_width="227dp"
+            android:layout_height="134dp"
+            android:layout_below="@+id/linear_layout_top"
+            android:layout_margin="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp" />
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

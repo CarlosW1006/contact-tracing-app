@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="people_classify">
+        <item>"本國居民"</item>
+        <item>"外籍人士"</item>
+        <item>"其他選項"</item>
+    </string-array>
+
+    <string-array name="lp_classify">
+        <item>"法人場所"</item>
+        <item>"政府機關"</item>
+        <item>"學校"</item>
+    </string-array>
+</resources>
